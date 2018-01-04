@@ -1,0 +1,10 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;/*轮廓 边框之外*/
+  text-decoration: none;/*文本修饰 如下划线等*/
+  background: transparent;/*transparent透明*/
+  font-weight: normal;
+  font-family: 'Roboto';
+}

@@ -1,0 +1,83 @@
+#fnb-header{
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+#fnb-header-landing{
+  position: relative;
+  height: 88px;
+}
+
+#fnb-header-body-wrapper{
+  position: relative;
+  padding: 0 20px;
+  height:100%;
+}
+
+#fnb-header-body{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1309px;
+}
+
+#fnb-header-body>.fnb-header-logo{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -13px;
+  padding: 0;
+  width: 133px;
+  height: 25px;
+  background: url("../img/logo.png") center center no-repeat;
+  background-size: contain;/*保持图像的纵横比并将图像缩放成将适合背景定位区域的最大大小*/
+}
+#fnb-header-body>.fnb-header-beta{
+  position:absolute;
+  left: 140px;
+  top: 50%;
+  margin-top: -6px;
+  width: 70px;
+  height: 18px;
+  line-height: 18px;
+  border-radius: 9px;
+  background: #38d8d6;
+  text-align: center;
+}
+
+#fnb-header-body>.fnb-header-menu{
+  position: relative;
+  float: right;
+  height: 100%;
+}
+#fnb-header-body>.fnb-header-menu>.fnb-header-menu-inside{
+  position: relative;
+  top: 50%;
+  margin-top: -15px;
+  height: 30px;
+}
+#fnb-header-body>.fnb-header-menu>.fnb-header-menu-inside>.fnb-header-menu-item{
+  position: relative;
+  display: inline-block;
+  margin-left: 2px;
+  padding: 0 14px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+#fnb-header-body>.fnb-header-menu>.fnb-header-menu-inside>.fnb-header-menu-item-join{
+  background: #38d8d6;
+  margin-left: 15px;
+  height: 26px;
+  line-height: 26px;
+  border:2px solid #38d8d6;
+}
