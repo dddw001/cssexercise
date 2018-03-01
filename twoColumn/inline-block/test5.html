@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    p{margin: 0;}
+    .parent{font-size:0;}
+    .left{display: inline-block;vertical-align: top;width: 100px;margin-right: 20px;font-size: 16px;}
+    .right{display: inline-block;vertical-align: top;width: calc(100% - 120px);font-size: 16px;}
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <!--
+    inline-block内联块布局的主要缺点是需要设置垂直对齐方式vertical-align
+    还需要处理换行符解析成空格的间隙问题
+    IE7-浏览器不支持给块级元素设置inline-block属性 兼容代码是display:inline;zoom:1;
+  -->
+  <div class="parent" style="background-color:lightgray;">
+    <div class="left" style="background-color:lightblue;">
+      <p>left</p>
+    </div>
+    <div class="right" style="background-color:lightgreen;">
+      <p>right</p>
+      <p>right</p>
+    </div>
+  </div>
+</body>
+</html>

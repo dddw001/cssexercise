@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    p{margin: 0;}
+    .parent{overflow: hidden;zoom: 1;}
+    .left{float: left;width: 100px;margin-right: 20px;}
+    .right{float: left;width: calc(100% - 120px);}
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <!--
+    float浮动布局的缺点
+    浮动后会造成文本环绕
+    要及时清除浮动
+    如果各浮动元素高度不同时，会出现犬牙交错的效果
+  -->
+  <!--
+    float+margin+calc
+  -->
+  <div class="parent" style="background-color:lightgray;">
+    <div class="left" style="background-color:lightblue;">
+      <p>left</p>
+    </div>
+    <div class="right" style="background-color:lightgreen;">
+      <p>right</p>
+      <p>right</p>
+    </div>
+  </div>
+</body>
+</html>

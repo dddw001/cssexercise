@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    p{margin: 0;}
+    .parent{overflow: hidden;zoom: 1;}
+    .left{float: left;width: 100px;}
+    .right{margin-left: 120px;}
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <!--
+    float浮动布局的缺点
+    浮动后会造成文本环绕
+    要及时清除浮动
+    如果各浮动元素高度不同时，会出现犬牙交错的效果
+  -->
+  <!--
+    float+margin
+    定宽的一列使用float
+    自适应的一列使用计算后的margin
+  -->
+  <div class="parent" style="background-color:lightgray;">
+    <div class="left" style="background-color:lightblue;">
+      <p>left</p>
+    </div>
+    <div class="right" style="background-color:lightgreen;">
+      <p>right</p>
+      <p>right</p>
+    </div>
+  </div>
+  <!--
+    缺点1：ie6下右侧首行文字向右偏移3px,解决办法是在left元素上设置margin-right:-100px;
+    缺点2：当右侧容器中有元素清除浮动时，会使该元素不与左侧浮动元素同行，从而出现文字下沉现象
+  -->
+</body>
+</html>

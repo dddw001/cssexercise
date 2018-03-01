@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    p{margin: 0;}
+    .parent{overflow: hidden;zoom: 1;}
+    .left{position: relative;float: left;width: 100px;}
+    .rightWrap{float: left;width: 100%;margin-left: -100px;}
+    .right{margin-left: 120px;}
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <!--
+    float浮动布局的缺点
+    浮动后会造成文本环绕
+    要及时清除浮动
+    如果各浮动元素高度不同时，会出现犬牙交错的效果
+  -->
+  <!--
+    float+margin+fix
+    自适应外面包裹一层并为其设置100%宽度 margin-left为负值(通过盒模型计算)
+    右侧元素会层叠在左侧元素之上，所以.left需要使用relative来提升层级
+  -->
+  <div class="parent" style="background-color:lightgray;">
+    <div class="left" style="background-color:lightblue;">
+      <p>left</p>
+    </div>
+    <div class="rightWrap" style="background-color:pink;">
+      <div class="right" style="background-color:lightgreen;">
+        <p>right</p>
+        <p>right</p>
+    </div>
+    </div>
+  </div>
+</body>
+</html>
